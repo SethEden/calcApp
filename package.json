@@ -1,0 +1,28 @@
+{
+  "name": "calcapp",
+  "version": "0.0.1",
+  "description": "A simple CLI calculator application",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SethEden/calcApp.git"
+  },
+  "keywords": [
+    "CLI",
+    "application",
+    "nodeJS",
+    "Training",
+    "Tutorial",
+    "Calculator"
+  ],
+  "author": "Seth Hollingsead",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SethEden/calcApp/issues"
+  },
+  "homepage": "https://github.com/SethEden/calcApp#readme"
+}
