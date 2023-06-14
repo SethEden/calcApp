@@ -56,10 +56,36 @@ function application() {
                     inputDataValue2 = getUserInput('Enter the second number to add: ');
                     let addResult = myMath.add(inputDataValue1, inputDataValue2);
                     console.log('sum is: ' + addResult);
+                } else if (commandInput.toUpperCase().trim() === 'SUBTRACT') {
+                    inputDataValue1 = 0;
+                    inputDataValue2 = 0;
+                    inputDataValue1 = getUserInput('Enter the first number to subtract: ');
+                    inputDataValue2 = getUserInput('Enter the second number to subtract: ');
+                    let subtractResult = myMath.subtract(inputDataValue1, inputDataValue2);
+                    console.log('difference is: ' + subtractResult);
+                } else if (commandInput.toUpperCase().trim() === 'MULTIPLY') {
+                    inputDataValue1 = 0;
+                    inputDataValue2 = 0;
+                    inputDataValue1 = getUserInput('Enter the first number to multiply: ');
+                    inputDataValue2 = getUserInput('Enter the second number to multiply: ');
+                    let multiplyResult = myMath.multiply(inputDataValue1, inputDataValue2);
+                    console.log('multiply result is: ' + multiplyResult);
+                } else if (commandInput.toUpperCase().trim() === 'DIVIDE') {
+                    inputDataValue1 = 0;
+                    inputDataValue2 = 0;
+                    inputDataValue1 = getUserInput('Enter the first number to divide: ');
+                    inputDataValue2 = getUserInput('Enter the second number to divide: ');
+                    let divisionResult = myMath.divide(inputDataValue1, inputDataValue2);
+                    console.log('division result is: ' + divisionResult);
+                } else if (commandInput.toUpperCase().trim() === 'FACTORIAL') {
+                    inputDataValue1 = 0;
+                    inputDataValue1 = getUserInput('Enter the number to compute factorial: ');
+                    let factorialResult = myMath.factorial(inputDataValue1);
+                    console.log('factorial result is: ' + factorialResult);
                 }
-            }
-        }
-    }
+            } // End-if (commandInput !== undefined)
+        } // End-while (programRunning)
+    } // End-if (argumentDriveInterface === false)
     console.log(`END ${namespacePrefix}${functionName} function`);
 }
 
